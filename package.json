@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "DeepSeek Harness 插件：上下文预算观测 + 带交接摘要的会话轮转",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitelady0666-boop/dsh-context-budget.git"
+  },
+  "homepage": "https://github.com/whitelady0666-boop/dsh-context-budget#readme",
+  "bugs": {
+    "url": "https://github.com/whitelady0666-boop/dsh-context-budget/issues"
+  },
   "type": "module",
   "main": "./index.js",
   "files": [
