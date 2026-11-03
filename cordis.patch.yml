@@ -1,0 +1,14 @@
+# dsh-context-budget 的 bundle patch
+#
+# 必须用 insert 形式。直接写 `- id: dsh-context-budget` 会被 loader 当成
+# “对未知目标的补丁”而静默跳过，插件根本不会加载。
+- insert:
+    - id: dsh-context-budget
+      name: dsh-context-budget
+      config:
+        budgetTokens: 20000
+        cachePriceRatio: 0.1
+        # 改成你自己的会话工作目录。留空插件会拒绝轮转（见 README「为什么 cwd 必须显式配」）。
+        cwd: C:/Users/you/your-workspace
+        # 记账、日志、交接记录写这里；不填则用 <DSH_HOME>/context-budget
+        # dataDir: C:/Users/you/.dsh/context-budget

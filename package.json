@@ -1,0 +1,32 @@
+{
+  "name": "dsh-context-budget",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：上下文预算观测 + 带交接摘要的会话轮转",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "context",
+    "budget",
+    "tokens",
+    "plugin"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
